@@ -6,4 +6,5 @@ services:
       - "8080:8080"
     volumes:
       - .:/app
+    restart: unless-stopped
     command: ['python3', "app.py"]
